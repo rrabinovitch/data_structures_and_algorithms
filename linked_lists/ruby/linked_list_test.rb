@@ -17,7 +17,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_nodes_have_next_node
-    skip
     n1 = Node.new("pizza")
     n2 = Node.new("cats")
     n1.next_node = n2
@@ -26,7 +25,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_accepts_next_node_on_init
-    skip
     n1 = Node.new("pizza", Node.new("cats"))
     assert_equal "cats", n1.next_node.data
     assert_equal Node, n1.next_node.class
