@@ -31,17 +31,14 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_starts_with_zero_elements
-    skip
     assert_equal 0, list.count
   end
 
   def test_a_new_list_starts_with_nil_head
-    skip
     assert_equal nil, LinkedList.new.head
   end
 
   def test_it_pushes_a_single_element_onto_a_list
-    skip
     list.push("pizza")
     assert_equal "pizza", list.head.data
     assert_equal 1, list.count
