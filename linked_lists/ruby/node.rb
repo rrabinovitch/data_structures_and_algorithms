@@ -6,4 +6,10 @@ class Node
     @data = data
     @next_node = next_node
   end
+
+  def delete_node
+    deleted_data = @data
+    @data = nil
+    deleted_data
+  end
 end

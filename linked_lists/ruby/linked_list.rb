@@ -17,6 +17,11 @@ class LinkedList
     @count += 1
   end
 
+  def pop
+    last_node.delete_node
+    @count -= 1
+  end
+
   def last_node
     current_node = @head
     current_node = current_node.next_node until current_node.next_node.nil?
