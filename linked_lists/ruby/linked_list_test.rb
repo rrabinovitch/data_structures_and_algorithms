@@ -89,7 +89,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_pops_nil_when_there_are_no_elements
-    skip
     assert_nil list.pop
   end
 

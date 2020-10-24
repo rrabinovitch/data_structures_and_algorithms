@@ -18,8 +18,12 @@ class LinkedList
   end
 
   def pop
-    @count -= 1
-    last_node.delete_node
+    if @head.nil?
+      nil
+    else
+      @count -= 1
+      last_node.delete_node
+    end
   end
 
   def last_node
