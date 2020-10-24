@@ -9,7 +9,17 @@ class LinkedList
   end
 
   def push(data)
-    @head = Node.new(data)
+    if @head.nil?
+      @head = Node.new(data)
+    else
+      last_node.next_node = Node.new(data)
+    end
     @count += 1
+  end
+
+  def last_node
+    current_node = @head
+    current_node = current_node.next_node until current_node.next_node.nil?
+    current_node
   end
 end

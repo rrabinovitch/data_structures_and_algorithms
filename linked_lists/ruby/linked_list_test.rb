@@ -45,7 +45,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_pushes_two_elements
-    skip
     list.push("pizza")
     assert_equal "pizza", list.head.data
     list.push("stromboli")
@@ -53,7 +52,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_pushes_three_elements_onto_a_list
-    skip
     list.push("hello")
     assert_equal "hello", list.head.data
     list.push("world")
@@ -65,7 +63,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_adds_four_elements
-    skip
     list.push("hello")
     list.push("world")
     list.push("today")
@@ -76,7 +73,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_pops_the_last_element_from_the_list
-    skip
     list.push("hello")
     list.push("world")
     list.push("today")
