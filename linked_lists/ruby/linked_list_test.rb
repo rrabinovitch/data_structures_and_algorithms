@@ -82,7 +82,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_a_popped_element_is_removed
-    skip
     list.push("hello")
     output = list.pop
     assert_equal "hello", output
