@@ -1,6 +1,7 @@
 gem 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
+require './linked_list'
 
 class LinkedListTest < Minitest::Test
   attr_reader :list
