@@ -2,6 +2,7 @@ gem 'minitest'
 require 'minitest/autorun'
 require 'minitest/pride'
 require './linked_list'
+require './node'
 
 class LinkedListTest < Minitest::Test
   attr_reader :list
@@ -11,7 +12,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_nodes_have_data
-    skip
     node = Node.new("pizza")
     assert_equal "pizza", node.data
   end
