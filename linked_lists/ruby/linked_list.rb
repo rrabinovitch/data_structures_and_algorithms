@@ -26,9 +26,27 @@ class LinkedList
     end
   end
 
+  def delete(data)
+    found_node = find_node(data)
+    if found_node
+      found_node.delete_node
+      @count -= 1
+    end
+  end
+
   def last_node
     current_node = @head
     current_node = current_node.next_node until current_node.next_node.nil?
     current_node
+  end
+
+  def find_node(data)
+    current_node = @head
+    until current_node.nil? || current_node.data == data
+      current_node = current_node.next_node
+    end
+
+    return current_node if !current_node.nil? && current_node.data == data
+    return nil
   end
 end

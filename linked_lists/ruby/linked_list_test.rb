@@ -93,14 +93,12 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_deletes_a_solo_node
-    skip
     list.push("hello")
     list.delete("hello")
     assert_equal 0, list.count
   end
 
   def test_it_does_not_delete_when_the_data_does_not_match
-    skip
     list.push("hello")
     list.push("world")
     list.delete("today")
@@ -108,7 +106,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_deletes_a_last_node
-    skip
     list.push("hello")
     list.push("world")
     list.push("today")
